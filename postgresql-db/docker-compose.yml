@@ -4,16 +4,17 @@ services:
   postgresql-db:
     image: postgres:16-alpine
     container_name: kt-postgresql-db
-    environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: postgres
+    env_file:
+      - .env
     ports:
       - "5454:5432"
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - kt-jab-houy-pgdata-v16:/var/lib/postgresql/data
     networks:
       - kt-network
+
+volumes:
+  kt-jab-houy-pgdata-v16:
 
 networks:
   kt-network:
