@@ -8,7 +8,7 @@ It is designed for local development environments or small-scale deployments whe
 ## Directory Structure
 
 ```shell
-.
+kt-jab-houy-docker/postgresql-db/
 ├── .env.example # Example environment variables
 ├── .gitignore # Git ignore configuration
 └── docker-compose.yml # Docker Compose configuration
