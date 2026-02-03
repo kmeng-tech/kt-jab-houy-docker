@@ -1,0 +1,7 @@
+Version 1.0.0
+
+- Move docker to another repository
+- Add catalog service's docker file to the docker project
+- Move the docker-compose file into the postgresql-db directory for docker project
+- Add docker dev file for the tenant auth service
+- Update the image of the Tenant Auth Service
